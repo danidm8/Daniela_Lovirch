@@ -25,6 +25,7 @@ a {
   transform: translateX(-50%);
   width: 250px;
   z-index: 1000;
+
 .shark-wrapper {
   position: fixed;
   bottom: 0;
@@ -40,7 +41,7 @@ a {
   cursor: pointer;
   animation: bobbing 2s ease-in-out infinite;
 }
-}
+
 
 @keyframes bobbing {
   0%, 100% { transform: translateY(0); }
