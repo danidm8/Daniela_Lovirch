@@ -1,0 +1,134 @@
+body {
+  background-image: url("../Slike/Pozadinska2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+	 font-family: 'Courier New', monospace;
+  margin: 0;
+  padding: 0;
+  color: white;
+  size: 80px;
+ }
+ ul {
+	 font-family: 'Courier New', monospace;
+ }
+ .gallery {
+  display: flex;
+  justify-content: center;
+  gap: 30px; 
+  flex-wrap: wrap; 
+  margin-top: 40px;
+}
+
+.item {
+  text-align: center;
+  max-width: 300px;
+}
+
+.item img {
+	max-width: 250px;
+  width: 100%;
+  height: auto;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+  
+  .video-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.video-container iframe {
+  max-width: 100%;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+a {
+	color: white;
+}
+.item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px white;
+  transition: all 0.3s ease;
+}
+h1, h2 {
+  background: linear-gradient(to right, cadetblue, white);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 1px 1px 2px white;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.item {
+  animation: fadeIn 1s ease forwards;
+  opacity: 0; /* required for animation */
+}
+.item p {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 15px;
+  margin-top: 10px;
+  font-style: italic;
+}
+.bubble-text {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px 15px;
+  border-radius: 15px;
+  display: inline-block;
+  margin-top: 10px;
+  font-style: italic;
+}
+@keyframes slideFade {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1, h2 {
+  animation: slideFade 1s ease forwards;
+}
+body {
+  cursor: url("../Slike/arrow-cursor-outline.png"), auto;
+}
+a {
+  cursor: url("../Slike/hand-pointer.png"), pointer;
+}
+li {
+  transition: transform 0.2s ease;
+}
+
+li:hover {
+  transform: scale(1.1);
+}
+.fun-sidebar {
+  position: fixed;
+  left: 0;
+  top: 30%;
+  width: 200px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 0 10px 10px 0;
+  font-style: italic;
+  font-size: 14px;
+  color: white;
+  z-index: 1000;
+}
+.secret-btn {
+  position: fixed;
+  top: 50px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+}
+}

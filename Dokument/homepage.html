@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>Daniela Lovrić</title>
+<link rel="stylesheet" href="style1.css">
+<h1>Daniela Lovrić</h1>
+<h2>Kolegij Digitalni multimedij 1</h2>
+</head>
+<body>
+<p>Pozdrav! Moje ime je Daniela Lovrić i ovdje ću predstaviti stranice koje sam izradila!</p>
+<style>
+  @font-face {
+    font-family: "DanielaLovric";
+    src: url("Font/DanielaLovric.ttf") format("truetype");
+  }
+
+  h1 {
+    font-family: "DanielaLovric", sans-serif;
+	color: aliceblue;
+  }
+	ul {	padding:40px; 
+			margin-left: auto; 
+			margin-right:auto;  
+			width: 400px;
+			} 
+	li {	display:inline; 
+			background-color:MediumTurquoise;
+			padding:25px;
+			border: 5px solid LightSeaGreen;
+		}
+	li:active {background-color:LightBlue;}
+		
+	li a {	color:white; 
+			font-family: "CabinSketch", sans-serif; 
+			/*font-family: "Montserrat", sans-serif; */
+			text-transform: uppercase;
+			}
+	li a:link {text-decoration:none;}
+	li a:hover {text-decoration:underline;}
+	
+	</style>
+<nav>
+	<ul>
+		<li><a href="o_meni.html">O meni!</a></li>
+		<li><a href="vjezbe.html">Vježbe!</a></li>
+		<li><a href="video.html">Video!</a></li>
+	</ul>
+</nav>
+<div class="shark-wrapper">
+  <input type="checkbox" id="blaz-toggle" hidden>
+  
+  <label for="blaz-toggle" class="shark-clickable">
+    <img src="../Slike/blaž.webp" alt="Blaž" class="shark-image">
+    <div class="blaz-bubble">Ovo je Blaž!</div>
+  </label>
+</div>
+</body>
